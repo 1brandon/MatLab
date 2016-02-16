@@ -1,0 +1,25 @@
+% Write and test a script that takes as input three real numbers abc , , and prints out the solutions for the quadratic equation 2 ax bx c + + = 0 . Please note that there are three possible situations. 
+% Lecture4_FlowControl #5
+
+a = input('a');
+b = input('b');
+c = input('c');
+
+if(a==0)
+    % “linear Equation” 
+else
+    d = (b*b)-4*a*c;
+    if(d<0)
+        % “No Real Solutions”
+    else
+        if(d==0)
+            x = -(b/2*a);
+            x
+        else
+            x1 = (-b+sqrt(d))/(2*a);
+            x2 = (-b-sqrt(d))/(2*a);
+            x1
+            x2
+        end
+    end
+end
