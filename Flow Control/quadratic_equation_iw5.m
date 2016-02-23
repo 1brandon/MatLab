@@ -6,11 +6,11 @@ b = input('b');
 c = input('c');
 
 if(a==0)
-    % “linear Equation” 
+    error = 'linear Equation'
 else
     d = (b*b)-4*a*c;
     if(d<0)
-        % “No Real Solutions”
+        error = 'No Real Solutions'
     else
         if(d==0)
             x = -(b/2*a);
