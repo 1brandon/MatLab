@@ -1,0 +1,11 @@
+% main program main_practice_test2
+% a. graph the function on [-5,5]
+% b. calculate its roots
+% c. calcul
+x=[-5:0.1:5];
+for i=1:101
+ f(i)=practice_test(x(i));
+end
+plot(x,f)
+root=fzero(@(x) practice_test(x), 3)
+integral=quad(@(x) practice_test(x),-4,4) 

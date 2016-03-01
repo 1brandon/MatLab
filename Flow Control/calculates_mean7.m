@@ -10,3 +10,15 @@ end
 
 mean = sum/N;
 mean
+
+% or
+N = input('N');
+for i=1:N
+ i
+ x(i)=input('x(i)');
+end
+S=0;
+for i=1:N
+ S=S+x(i);
+end
+S=S/N 
